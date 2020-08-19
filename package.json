@@ -1,0 +1,24 @@
+{
+  "name": "@definejs/api",
+  "version": "0.1.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "micty",
+  "email": "mictydeng@qq.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/definejs/api.git"
+  },
+  "dependencies": {
+    "@definejs/emitter": "^0.1.0",
+    "@definejs/fn": "^0.1.0",
+    "@definejs/json": "^0.1.0",
+    "@definejs/object": "^0.1.4",
+    "@definejs/proxy": "^0.1.0",
+    "@definejs/query": "^0.1.0",
+    "@definejs/string": "^0.1.1"
+  }
+}
