@@ -1,6 +1,6 @@
 {
   "name": "@definejs/api",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -16,7 +16,7 @@
     "@definejs/emitter": "^0.1.0",
     "@definejs/fn": "^0.1.0",
     "@definejs/json": "^0.1.0",
-    "@definejs/object": "^0.1.4",
+    "@definejs/object": "^1.0.6",
     "@definejs/proxy": "^0.1.0",
     "@definejs/query": "^0.1.0",
     "@definejs/string": "^0.1.1"
