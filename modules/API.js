@@ -1,10 +1,11 @@
 const $Object = require('@definejs/object');
 const Emitter = require('@definejs/emitter');
 const Fn = require('@definejs/fn');
+
 const Ajax = require('./API/Ajax');
 
 const mapper = new Map();
-
+let idCounter = 0;
 
 class API {
     /**
@@ -27,7 +28,7 @@ class API {
         name = name || '';
         config = $Object.deepAssign({}, exports.defaults, config);
 
-
+        let id = `definejs-API-${idCounter++}`;
         let emitter = new Emitter(this);
         let successCode = config.successCode;
         let proxy = config.proxy;
@@ -83,6 +84,7 @@ class API {
         };
 
         let meta = {
+            'id': id,
             'ajax': ajax,
             'status': '',
             'args': [],
@@ -107,6 +109,11 @@ class API {
         };
 
         mapper.set(this, meta);
+
+
+        Object.assign(this, {
+            'id': meta.id,
+        });
 
 
         //内部共用函数。
@@ -164,6 +171,12 @@ class API {
             });
         }
     }
+
+    // /**
+    // * 当前实例的 id。
+    // * 也是最外层的 DOM 节点的 id。
+    // */
+    // id = '';
 
 
     /**
