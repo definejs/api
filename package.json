@@ -1,6 +1,6 @@
 {
   "name": "@definejs/api",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -13,12 +13,10 @@
     "url": "https://github.com/definejs/api.git"
   },
   "dependencies": {
-    "@definejs/emitter": "^1.0.0",
+    "@definejs/emitter": "^1.1.0",
     "@definejs/fn": "^1.0.0",
-    "@definejs/json": "^1.0.0",
-    "@definejs/object": "^1.1.0",
-    "@definejs/proxy": "^1.0.0",
     "@definejs/query": "^1.0.0",
-    "@definejs/string": "^1.0.0"
+    "@definejs/script": "^1.0.0",
+    "@definejs/url": "^1.0.0"
   }
 }
