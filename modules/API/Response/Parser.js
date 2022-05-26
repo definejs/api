@@ -36,7 +36,9 @@ module.exports = {
             let type = headers['content-type'];
             let text = xhr.responseText;
 
-            if (type.startsWith('application/json;')) {
+            // `Content-Type: application/json` 或
+            // `Content-Type: application/json; charset=UTF-8`。
+            if (type == 'application/json' || type.startsWith('application/json;')) {
                 json = $JSON.parse(text);
             }
 
